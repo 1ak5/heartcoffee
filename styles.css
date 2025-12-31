@@ -30,7 +30,8 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100%;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -39,9 +40,9 @@ body {
     font-family: var(--font-body);
     overflow-x: hidden;
     width: 100%;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
     position: relative;
-    /* Establish context for absolute shapes */
     line-height: 1.6;
 }
 
@@ -249,6 +250,8 @@ body {
     align-items: center;
     position: relative;
     padding-top: 80px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .hero-container {
@@ -773,6 +776,12 @@ body {
 
 /* Story Section */
 /* Story Section */
+.story {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
 .story-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1166,6 +1175,7 @@ body {
     padding: 8rem 0 4rem;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .footer::after {
@@ -1479,8 +1489,27 @@ body {
     }
 
     .story-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        /* Stack earlier for tablet */
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .story-image {
+        justify-content: center;
+    }
+
+    .story-content {
+        padding: 0 2rem;
+    }
+
+    .story-points {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .story-main-img {
+        max-width: 100%;
     }
 
     .insta-grid {
@@ -1651,19 +1680,23 @@ body {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgba(26, 26, 26, 0.9);
+        background: rgba(26, 26, 26, 0.98);
+        /* Increased opacity for better look */
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         z-index: 2000;
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.5s;
         overflow-y: auto;
+        visibility: hidden;
+        /* Critical fix for black line overflow */
     }
 
     .mobile-menu.active {
         right: 0;
+        visibility: visible;
     }
 
     .mobile-menu-header {
@@ -1744,7 +1777,7 @@ body {
         height: auto;
         min-height: 110vh;
         /* Keep height for stripe placement */
-        overflow: visible;
+        overflow: hidden;
         padding-bottom: 2rem;
     }
 
@@ -1854,7 +1887,7 @@ body {
     }
 
     .floating-coffee {
-        width: 110%;
+        width: 100%;
         filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.4));
         transform: translateX(0) !important;
         /* Force reset of entrance translateX */
@@ -1932,14 +1965,14 @@ body {
     }
 
     .story {
-        overflow: visible;
-        padding: 3rem 0;
+        padding: 4rem 0;
+        overflow: hidden;
     }
 
     .story-container {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
     .story-image {
@@ -1947,59 +1980,65 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
-        position: relative;
+        margin-bottom: 0;
+        /* Removed bottom margin */
     }
 
     .img-frame {
-        padding: 0;
         width: 100%;
+        max-width: 450px;
+        /* Constrain width */
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     .story-main-img {
-        width: 100%;
-        max-width: 400px;
+        width: 90%;
+        /* Slightly smaller than frame */
         height: auto;
         z-index: 2;
+        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
     }
 
     .story-blob {
-        display: block;
-        width: 130%;
-        height: auto;
-        aspect-ratio: 1/1;
-        opacity: 0.4;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
+        width: 140%;
+        opacity: 0.3;
     }
 
     .story-content {
-        padding: 0;
         text-align: center;
+        padding: 0 1rem;
     }
 
     .story .section-title {
-        font-size: 2rem;
-        margin-bottom: 0.8rem;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        line-height: 1.1;
     }
 
     .story-content p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        opacity: 0.85;
+        margin-bottom: 1.5rem;
     }
 
     .story-points {
-        margin: 1rem 0;
-        text-align: left;
         display: inline-block;
+        text-align: left;
+        margin: 0 auto 2rem;
+        background: rgba(255, 199, 44, 0.1);
+        padding: 1.5rem 2rem;
+        border-radius: 20px;
     }
 
     .story-points li {
-        font-size: 0.9rem;
-        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .story-points li:last-child {
+        margin-bottom: 0;
     }
 
     /* Instagram Section - Premium Mobile Layout */
