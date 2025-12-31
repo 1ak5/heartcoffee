@@ -1516,14 +1516,67 @@ body {
         grid-row: 1 / 2;
     }
 
+    /* Footer Mobile Redesign */
+    .footer {
+        padding: 4rem 2rem 2rem;
+        text-align: center;
+    }
+
     .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+        /* Center paragraph */
+        font-size: 0.95rem;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-info p {
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+
+    .footer-social {
+        justify-content: center;
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .footer-social a {
+        background: rgba(255, 255, 255, 0.1) !important;
+        width: 50px;
+        height: 50px;
     }
 
     .footer::before {
-        font-size: 20vw;
-        bottom: -20px;
+        font-size: 18vw;
+        bottom: -10px;
+    }
+
+    .footer-blob {
+        opacity: 0.08;
+        /* Reduce distraction on small screens */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
     }
 }
 
