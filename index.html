@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Coffee | Taste the Love</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-links left-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Story</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+
+            <a href="#" class="logo">
+                Heart <span>Coffee</span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="#visit" class="btn-nav-light">Find Us <ion-icon name="arrow-forward-circle"></ion-icon></a>
+                <a href="#order" class="btn-nav-outline">Order <ion-icon name="arrow-forward-circle"></ion-icon></a>
+            </div>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#" class="logo">Heart <span>Coffee</span></a>
+                <div class="close-menu" id="close-menu">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <ul class="mobile-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Story</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-actions">
+                <a href="#visit" class="btn btn-primary">Find Us <ion-icon name="arrow-forward-circle"></ion-icon></a>
+                <a href="#order" class="btn btn-outline">Order Now <ion-icon
+                        name="arrow-forward-circle-outline"></ion-icon></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-chip">Est. 2024</div>
+                <h1 class="hero-title">
+                    Brewed with <br> <span class="text-highlight">Passion</span> & Soul
+                </h1>
+                <p class="hero-text">
+                    Experience the perfect blend of artisanal coffee and vibrant community vibes. Every cup tells a
+                    story.
+                </p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Menu <ion-icon name="arrow-forward-circle"></ion-icon></a>
+                    <a href="#visit" class="btn btn-outline">Visit Us <ion-icon
+                            name="arrow-forward-circle-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-200">
+                <div class="hero-img-wrapper">
+                    <img src="assets/hero-coffee.png" alt="Floating Coffee Cup" class="floating-coffee">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in delay-500">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Moving Stripe -->
+    <div class="moving-stripe">
+        <div class="stripe-content">
+            <span>VEGETARIAN DONE BETTER</span> • <span>BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span> •
+            <span>VEGETARIAN DONE BETTER</span> • <span>BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span> •
+            <span>VEGETARIAN DONE BETTER</span> • <span>BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span>
+        </div>
+    </div>
+
+
+    <!-- Brand Values -->
+    <section class="values section-padding">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-card fade-in-up">
+                    <div class="icon-box">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                    </div>
+                    <h3>Freshly Brewed</h3>
+                    <p>Beans roasted daily for the freshest taste.</p>
+                </div>
+                <div class="value-card fade-in-up delay-100">
+                    <div class="icon-box">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+                    </div>
+                    <h3>Handcrafted</h3>
+                    <p>Made with love by expert baristas.</p>
+                </div>
+                <div class="value-card fade-in-up delay-200">
+                    <div class="icon-box">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                    </div>
+                    <h3>Sustainable</h3>
+                    <p>Ethically sourced and eco-friendly.</p>
+                </div>
+                <div class="value-card fade-in-up delay-300">
+                    <div class="icon-box">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h3>Premium</h3>
+                    <p>Only the finest ingredients used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Menu -->
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Our Favorites</span>
+                <h2 class="section-title">Signature Delights</h2>
+            </div>
+        </div>
+
+        <div class="menu-scroll-container fade-in-up">
+
+            <!-- Card 1: Blue -->
+            <div class="menu-card card-blue">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=500"
+                        alt="Pancakes">
+                    <span class="time-badge">15 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="checkmark-circle"></ion-icon> <span>Vegetarian</span>
+                    </div>
+                    <h3 class="card-title">CLASSIC BLUEBERRY PANCAKES</h3>
+                    <a href="#" class="view-btn">
+                        View Recipe <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Maroon -->
+            <div class="menu-card card-maroon">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=500"
+                        alt="Burger">
+                    <span class="time-badge">25 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="flame"></ion-icon> <span>Best Seller</span>
+                    </div>
+                    <h3 class="card-title">LOADED GOURMET CHEESEBURGER</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Yellow -->
+            <div class="menu-card card-yellow">
+                <div class="card-img-box">
+                    <img src="assets/croissant.png" alt="Croissant" style="transform: scale(1.1);">
+                    <span class="time-badge">10 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="leaf"></ion-icon> <span>Vegan Option</span>
+                    </div>
+                    <h3 class="card-title">GOLDEN BUTTER CROISSANT</h3>
+                    <a href="#" class="view-btn">
+                        View Details <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Purple -->
+            <div class="menu-card card-purple">
+                <div class="card-img-box">
+                    <!-- Fixed Image URL -->
+                    <img src="assets/food3.png" alt="Donut">
+                    <span class="time-badge">12 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="heart"></ion-icon> <span>Sweet Tooth</span>
+                    </div>
+                    <h3 class="card-title">GLAZED BERRY DONUTS</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: Teal -->
+            <div class="menu-card card-teal">
+                <div class="card-img-box">
+                    <img src="assets/hero-coffee.png" alt="Coffee">
+                    <span class="time-badge">5 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="cafe"></ion-icon> <span>Signature</span>
+                    </div>
+                    <h3 class="card-title">ICED CARAMEL MACCHIATO</h3>
+                    <a href="#" class="view-btn">
+                        View Drink <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- DUPLICATE CARDS FOR LOOP EFFECT -->
+
+            <!-- Card 6: Blue -->
+            <div class="menu-card card-blue">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=500"
+                        alt="Pancakes">
+                    <span class="time-badge">15 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="checkmark-circle"></ion-icon> <span>Vegetarian</span>
+                    </div>
+                    <h3 class="card-title">CLASSIC BLUEBERRY PANCAKES</h3>
+                    <a href="#" class="view-btn">
+                        View Recipe <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7: Maroon -->
+            <div class="menu-card card-maroon">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=500"
+                        alt="Burger">
+                    <span class="time-badge">25 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="flame"></ion-icon> <span>Best Seller</span>
+                    </div>
+                    <h3 class="card-title">LOADED GOURMET CHEESEBURGER</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8: Yellow -->
+            <div class="menu-card card-yellow">
+                <div class="card-img-box">
+                    <img src="assets/croissant.png" alt="Croissant" style="transform: scale(1.1);">
+                    <span class="time-badge">10 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="leaf"></ion-icon> <span>Vegan Option</span>
+                    </div>
+                    <h3 class="card-title">GOLDEN BUTTER CROISSANT</h3>
+                    <a href="#" class="view-btn">
+                        View Details <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9: Purple -->
+            <div class="menu-card card-purple">
+                <div class="card-img-box">
+                    <img src="assets/food3.png" alt="Donut">
+                    <span class="time-badge">12 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="heart"></ion-icon> <span>Sweet Tooth</span>
+                    </div>
+                    <h3 class="card-title">GLAZED BERRY DONUTS</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 10: Teal -->
+            <div class="menu-card card-teal">
+                <div class="card-img-box">
+                    <img src="assets/hero-coffee.png" alt="Coffee">
+                    <span class="time-badge">5 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="cafe"></ion-icon> <span>Signature</span>
+                    </div>
+                    <h3 class="card-title">ICED CARAMEL MACCHIATO</h3>
+                    <a href="#" class="view-btn">
+                        View Drink <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- DUPLICATE CARDS FOR LOOP EFFECT -->
+
+            <!-- Card 6: Blue -->
+            <div class="menu-card card-blue">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=500"
+                        alt="Pancakes">
+                    <span class="time-badge">15 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="checkmark-circle"></ion-icon> <span>Vegetarian</span>
+                    </div>
+                    <h3 class="card-title">CLASSIC BLUEBERRY PANCAKES</h3>
+                    <a href="#" class="view-btn">
+                        View Recipe <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7: Maroon -->
+            <div class="menu-card card-maroon">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=500"
+                        alt="Burger">
+                    <span class="time-badge">25 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="flame"></ion-icon> <span>Best Seller</span>
+                    </div>
+                    <h3 class="card-title">LOADED GOURMET CHEESEBURGER</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8: Yellow -->
+            <div class="menu-card card-yellow">
+                <div class="card-img-box">
+                    <img src="assets/croissant.png" alt="Croissant" style="transform: scale(1.1);">
+                    <span class="time-badge">10 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="leaf"></ion-icon> <span>Vegan Option</span>
+                    </div>
+                    <h3 class="card-title">GOLDEN BUTTER CROISSANT</h3>
+                    <a href="#" class="view-btn">
+                        View Details <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9: Purple -->
+            <div class="menu-card card-purple">
+                <div class="card-img-box">
+                    <img src="assets/food3.png" alt="Donut">
+                    <span class="time-badge">12 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="heart"></ion-icon> <span>Sweet Tooth</span>
+                    </div>
+                    <h3 class="card-title">GLAZED BERRY DONUTS</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 10: Teal -->
+            <div class="menu-card card-teal">
+                <div class="card-img-box">
+                    <img src="assets/hero-coffee.png" alt="Coffee">
+                    <span class="time-badge">5 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="cafe"></ion-icon> <span>Signature</span>
+                    </div>
+                    <h3 class="card-title">ICED CARAMEL MACCHIATO</h3>
+                    <a href="#" class="view-btn">
+                        View Drink <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- DUPLICATE CARDS FOR LOOP EFFECT -->
+
+            <!-- Card 6: Blue -->
+            <div class="menu-card card-blue">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=500"
+                        alt="Pancakes">
+                    <span class="time-badge">15 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="checkmark-circle"></ion-icon> <span>Vegetarian</span>
+                    </div>
+                    <h3 class="card-title">CLASSIC BLUEBERRY PANCAKES</h3>
+                    <a href="#" class="view-btn">
+                        View Recipe <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7: Maroon -->
+            <div class="menu-card card-maroon">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=500"
+                        alt="Burger">
+                    <span class="time-badge">25 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="flame"></ion-icon> <span>Best Seller</span>
+                    </div>
+                    <h3 class="card-title">LOADED GOURMET CHEESEBURGER</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8: Yellow -->
+            <div class="menu-card card-yellow">
+                <div class="card-img-box">
+                    <img src="assets/croissant.png" alt="Croissant" style="transform: scale(1.1);">
+                    <span class="time-badge">10 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="leaf"></ion-icon> <span>Vegan Option</span>
+                    </div>
+                    <h3 class="card-title">GOLDEN BUTTER CROISSANT</h3>
+                    <a href="#" class="view-btn">
+                        View Details <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9: Purple -->
+            <div class="menu-card card-purple">
+                <div class="card-img-box">
+                    <img src="assets/food3.png" alt="Donut">
+                    <span class="time-badge">12 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="heart"></ion-icon> <span>Sweet Tooth</span>
+                    </div>
+                    <h3 class="card-title">GLAZED BERRY DONUTS</h3>
+                    <a href="#" class="view-btn">
+                        Order Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 10: Teal -->
+            <div class="menu-card card-teal">
+                <div class="card-img-box">
+                    <img src="assets/hero-coffee.png" alt="Coffee">
+                    <span class="time-badge">5 min</span>
+                </div>
+                <div class="card-content">
+                    <div class="tags">
+                        <ion-icon name="cafe"></ion-icon> <span>Signature</span>
+                    </div>
+                    <h3 class="card-title">ICED CARAMEL MACCHIATO</h3>
+                    <a href="#" class="view-btn">
+                        View Drink <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <!-- Navigation Controls -->
+            <div class="menu-controls">
+                <button class="nav-btn prev-btn"><ion-icon name="arrow-back"></ion-icon></button>
+                <div class="pagination-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="nav-btn next-btn"><ion-icon name="arrow-forward"></ion-icon></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="about" class="story section-padding">
+        <div class="container story-container">
+            <div class="story-image fade-in-left">
+                <div class="img-frame">
+                    <!-- Placeholder using a gradient div if image not perfect, but using blob for bg -->
+                    <img src="assets/story.png" alt="Our Story" class="story-main-img">
+                    <img src="assets/blob-1.png" class="story-blob" alt="decoration">
+                </div>
+            </div>
+            <div class="story-content fade-in-right">
+                <span class="sub-title">Our Story</span>
+                <h2 class="section-title">From Coffee Lovers <br> To Coffee Makers</h2>
+                <p>
+                    Heart Coffee started with a simple dream: to create a space where community and quality meet.
+                    We believe that a cup of coffee is more than just caffeine—it's a moment of pause, a conversation
+                    starter, and a daily ritual.
+                </p>
+                <ul class="story-points">
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Ethically Sourced Beans</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Community Focused Events</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Passionate Baristas</li>
+                </ul>
+                <a href="#about" class="btn btn-secondary">Read More <ion-icon
+                        name="arrow-forward-circle"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Highlight -->
+    <section id="gallery" class="insta section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <ion-icon name="logo-instagram" class="insta-icon"></ion-icon>
+                <h2 class="section-title">@HeartCoffee</h2>
+                <p>Follow the vibe.</p>
+            </div>
+            <div class="insta-grid">
+                <div class="insta-item item-1"></div>
+                <div class="insta-item item-2"></div>
+                <div class="insta-item item-3"></div>
+                <div class="insta-item item-4"></div>
+                <div class="insta-item item-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title">Let's Meet Over Coffee</h2>
+            <p class="cta-text">Book a table or just drop by for a quick brew.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Find Us <ion-icon name="arrow-forward-circle"></ion-icon></a>
+                <a href="#" class="btn btn-outline">Book a Table <ion-icon
+                        name="arrow-forward-circle-outline"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Chatpata Blobs -->
+        <div class="footer-blob blob-f-1"></div>
+        <div class="footer-blob blob-f-2"></div>
+
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Heart <span>Coffee</span></a>
+                    <p>Experience the perfect blend of artisanal coffee and vibrant community vibes. Every cup tells a
+                        story of passion and craftsmanship.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#about">The Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Say Hello</h4>
+                    <div class="contact-info">
+                        <p><ion-icon name="location-outline"></ion-icon> 123 Coffee Lane, Brew City</p>
+                        <p><ion-icon name="mail-outline"></ion-icon> hello@heartcoffee.com</p>
+                        <p><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Heart Coffee. Handcrafted with Passion.</p>
+                <div class="footer-bottom-links">
+                    <p>Designed for Coffee Lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
