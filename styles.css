@@ -1719,7 +1719,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .navbar {
         width: 94%;
         top: 10px;
