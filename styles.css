@@ -2133,3 +2133,74 @@ body {
         opacity: 1;
     }
 }
+
+/* ===========================================
+   SCROLL REVEAL ANIMATIONS
+   =========================================== */
+
+/* Base hidden state for all animated elements */
+.fade-in-up,
+.fade-in-left,
+.fade-in-right,
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up {
+    transform: translateY(40px);
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.fade-in-right {
+    transform: translateX(40px);
+}
+
+.fade-in {
+    transform: translateY(0);
+}
+
+/* Visible state - triggered by JavaScript IntersectionObserver */
+.fade-in-up.visible,
+.fade-in-left.visible,
+.fade-in-right.visible,
+.fade-in.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Animation delays for staggered effects */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Scroll Progress Bar at top of page */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brand-yellow), var(--brand-orange));
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
