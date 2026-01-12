@@ -36,6 +36,7 @@ html {
 
 body {
     background-color: var(--bg-white);
+    
     color: var(--text-dark);
     font-family: var(--font-body);
     overflow-x: hidden;
