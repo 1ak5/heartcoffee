@@ -475,11 +475,16 @@ body {
 }
 
 /* Scroll Indicator */
+/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 5vh;
+    /* Relative to viewport height */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* Safe centering without transform */
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,15 +532,39 @@ body {
     }
 }
 
-/* Adjust for Mobile */
-@media (max-width: 480px) {
+/* Tablet */
+@media (max-width: 1024px) {
+    .scroll-indicator {
+        bottom: 4vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
     .scroll-indicator {
         bottom: 120px;
-        /* Balanced for mobile screen height */
+        /* Force it higher up on mobile to clear URL bars/bottom UI */
     }
 
     .scroll-text {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
+    }
+
+    .mouse {
+        width: 18px;
+        height: 28px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .scroll-indicator {
+        bottom: 110px;
+    }
+
+    .scroll-text {
+        font-size: 0.55rem;
+        letter-spacing: 1.5px;
     }
 }
 
